@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { StargateClient } from "@cosmjs/stargate";
+import WalletAddressForm from './components/WalletInput.js'
+import TxHashForm from "./components/TxInput.js";
 
 const App = () =>{
     const [client, setClient] = useState();
@@ -23,8 +25,13 @@ const App = () =>{
 
     return (
         <h1> 
-            <center>The Beginning of a Masterful dApp!</center>
-            
+            <center>The Beginning of a Masterful dApp!
+            <br />
+            <br />
+            <WalletAddressForm />
+            <br />
+            <TxHashForm />
+            </center>
         </h1>
     )
 }

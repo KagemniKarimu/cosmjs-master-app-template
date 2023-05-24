@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-// import { StargateClient } from "@cosmjs/stargate";
+import { StargateClient } from "@cosmjs/stargate";
 
 const App = () =>{
-/*    useEffect(() => {
+    useEffect(() => {
         connectStargate();
       }, []);
 
@@ -13,7 +13,7 @@ const App = () =>{
         );
         console.log(await client.getChainId());
       };
-*/
+
     return (
         <h1> 
             <center>The Beginning of a Masterful dApp!</center>

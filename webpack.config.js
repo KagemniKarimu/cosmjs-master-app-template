@@ -34,5 +34,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'public', 'index.html')
     })
-  ]
+  ],
+  resolve: {
+    fallback: {
+      crypto: require.resolve('crypto-browserify'),
+      buffer: require.resolve("buffer/"),
+      stream: require.resolve("stream-browserify")
+    },
+  }
 };

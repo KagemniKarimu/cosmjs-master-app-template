@@ -1,17 +1,18 @@
+import { StargateClient } from '@cosmjs/stargate';
 import { TextField, Button } from '@mui/material';
 import React, { useState } from 'react';
 
-const TxHashForm = () => {
+
+const TxHashForm = ({ onGetTx }) => {
     const [value, setValue] = useState('');
   
     const handleChange = (event) => {
       setValue(event.target.value);
     };
-  
+
     const handleSubmit = (event) => {
       event.preventDefault();
-      // Do something with the collected value
-      console.log(value);
+      onGetTx(value);
     };
   
     return (

@@ -16,7 +16,7 @@ const App = () =>{
 */
     return (
         <h1> 
-            <center>The Beginning of a Masterful dApp!</center>
+            <center>The Beginning of a Masterful App!</center>
         </h1>
     )
 }

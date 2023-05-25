@@ -54,7 +54,7 @@ const App = () =>{
     return (
       <center>
       <div>
-      <h1>The Beginning of a Masterful dApp!</h1>
+      <h1>The Beginning of a Masterful App!</h1>
       <WalletAddressForm onGetBalance={handleGetBalance} />
       <br />
       <TxHashForm onGetTx={handleGetTx} />

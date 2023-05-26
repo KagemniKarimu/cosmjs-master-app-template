@@ -1,4 +1,3 @@
-import { StargateClient } from '@cosmjs/stargate';
 import { TextField, Button } from '@mui/material';
 import React, { useState } from 'react';
 

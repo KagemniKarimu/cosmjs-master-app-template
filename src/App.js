@@ -16,7 +16,7 @@ const App = () =>{
     const connectStargate = async () => {
         try {
             const stargateClient = await StargateClient.connect(
-              'https://g.w.lavanet.xyz:443/gateway/cos5t/rpc-http/a43dd98c9ea68afa4f167969f48770bb'
+              'RPC_ENDPOINT_URL_HERE'
             );
             setClient(stargateClient);
             console.log("CosmJS Stargate Connected @",await stargateClient.getChainId());
